@@ -15,3 +15,4 @@ src/wp-content/cache/
 src/wp-content/advanced-cache.php
 src/wp-content/object-cache.php
 src/wp-content/uploads
+src/wp-content/w3tc-config/
