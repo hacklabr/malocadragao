@@ -79,8 +79,8 @@ var hl = {
         //adjustCarrousselHome();
 
         function replaceCountdown(){
-            var start = moment('2015-06-20 18:00');
-            var end = moment('2015-06-21 23:59');
+            var start = moment(GlobalConfiguration.startDateTime);
+            var end = moment(GlobalConfiguration.endDateTime);
             var now = moment();
             if (!window.$footer) {
                 var $footer = $('#countdown footer');

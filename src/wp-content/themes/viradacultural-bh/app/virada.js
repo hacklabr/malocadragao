@@ -392,7 +392,7 @@ app.controller('programacao', function($scope, $rootScope, $http, $location, $ti
 
         startTimeSetted = true;
 
-        $scope.startsAt = moment('2015-06-20 18:00').add('minutes', $scope.timeSlider.model.min * 15).format('H:mm');
+        $scope.startsAt = moment(GlobalConfiguration.startDateTime).add('minutes', $scope.timeSlider.model.min * 15).format('H:mm');
 
         if(timeouts.timeSlider)
             $timeout.cancel(timeouts.timeSlider);
@@ -408,16 +408,16 @@ app.controller('programacao', function($scope, $rootScope, $http, $location, $ti
 
 
     if(!startTimeSetted){
-        if(moment() >= moment('2015-06-20 18:00') && moment() < moment('2015-06-21 18:00')){
+        if(moment() >= moment(GlobalConfiguration.startDateTime) && moment() < moment(GlobalConfiguration.endDateTime)){
             var now = moment().subtract('minutes', 15);
-            $scope.timeSlider.model.min = parseInt(parseInt(now.diff(moment('2015-06-20 18:00')) / 1000) / 60 / 60 * 4);
+            $scope.timeSlider.model.min = parseInt(parseInt(now.diff(moment(GlobalConfiguration.startDateTime)) / 1000) / 60 / 60 * 4);
         }
     }
 
     $scope.$watch('timeSlider.model.max', function(){
         if(counters.populateEntities === 0)
             return;
-        $scope.endsAt = moment('2015-06-20 18:00').add('minutes', $scope.timeSlider.model.max * 15).format('H:mm');
+        $scope.endsAt = moment(GlobalConfiguration.startDateTime).add('minutes', $scope.timeSlider.model.max * 15).format('H:mm');
 
         if(timeouts.timeSlider)
             $timeout.cancel(timeouts.timeSlider);
@@ -559,7 +559,7 @@ app.controller('programacao', function($scope, $rootScope, $http, $location, $ti
 
     function getTime(time, startsOn){
         var t = parseInt(time.replace(':', ''));
-        if(t === 1800 && startsOn && startsOn == '2015-06-21'){
+        if(t === 1800 && startsOn && startsOn == GlobalConfiguration.endTime){
             t = 1759;
         }
 
