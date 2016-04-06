@@ -1,16 +1,16 @@
 <div id="countdown" class="col-md-2 hidden-sm hidden-xs">
     <div>Faltam</div>
-    <input class="knob days" data-displayfield="days" data-field="hours" data-min="0" data-max="24" data-fgcolor="#fb3f2a"/>
+    <input class="knob days" data-displayfield="days" data-field="hours" data-min="0" data-max="24" />
     <div>dias</div>
-    <input class="knob hours" data-displayfield="hours" data-field="m" data-min="0" data-max="60" data-fgcolor="#fb3f2a"/>
+    <input class="knob hours" data-displayfield="hours" data-field="m" data-min="0" data-max="60" />
     <div>horas</div>
-    <input class="knob minutes" data-displayfield="minutes" data-field="s" data-min="0" data-max="600" data-fgcolor="#fb3f2a"/>
+    <input class="knob minutes" data-displayfield="minutes" data-field="s" data-min="0" data-max="600" />
     <div>min</div>
     <footer>
         <time>
-            <div>20|21</div>
-            <div>Junho</div>
-            <div>2015</div>
+            <div>09|10</div>
+            <div>Julho</div>
+            <div>2016</div>
         </time>
         <div class="rede-sociais">
 
@@ -30,9 +30,9 @@
 <script>
 //when DOM is ready, execute
 jQuery(document).ready(function() {
-
+    
     var strCurrentDate, //TODO get from server
-    strEventDate = '2015-06-20 18:00',
+    strEventDate = GlobalConfiguration.startDateTime,
     $countdownElement = jQuery('#countdown'),
     $knobMinutes = jQuery('.knob.minutes');
 
@@ -42,12 +42,14 @@ jQuery(document).ready(function() {
     //init knob and display text
     jQuery('.knob').each(function() {
         var $el = jQuery(this);
+        $el.data('fgcolor', GlobalConfiguration.countdown.fgcolor);
         $el.data('width', '72');
         $el.data('height', '72');
         $el.data('readonly', true);
         $el.data('thickness', '.18');
         $el.data('step', '1');
         $el.data('displayinput', false);
+        
         //$el.data('rotation') = 'anticlockwise';
         //Interet Explorer doesn't suppor jQuery Knob background color. Causes a bug drawing a canvas circle, not an arc, so set it transparent
         if(navigator.appName != 'Microsoft Internet Explorer' && !(navigator.appName == 'Netscape' && navigator.userAgent.indexOf('Trident') !== -1))

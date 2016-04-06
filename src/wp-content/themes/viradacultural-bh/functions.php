@@ -73,11 +73,16 @@ function viradacultural_addJS() {
         ),
         'startDate' => '2016-07-09',
         'startTime' => '17:00',
-        'startDateTime' => '20156-07-09 17:00',
+        'startDateTime' => '2016-07-09 17:00',
         
         'endDate' => '2016-07-10',
         'endTime' => '23:59',
         'endDateTime' => '2016-07-10 23:59',
+        
+        'countdown' => [
+            'fgcolor' => '#FFB300',
+            
+        ]
     ));
 
 
