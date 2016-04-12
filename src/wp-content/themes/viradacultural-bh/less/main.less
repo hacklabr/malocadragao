@@ -47,20 +47,23 @@ body.programacao-single {
 
 /*Typography*/
 
-@virada-n-font-name:          "exo-regular-webfont";
-@virada-n-font-svg-id:        "exoregular";
-@virada-i-font-name:          "exo-italic-webfont";
-@virada-i-font-svg-id:        "exoitalic";
-@virada-b-font-name:          "exo-bold-webfont";
-@virada-b-font-svg-id:        "exobold";
-@virada-bi-font-name:         "exo-bolditalic-webfont";
-@virada-bi-font-svg-id:       "exobolditalic";
+@virada-n-font-name:          "opensans-regular-webfont";
+@virada-n-font-svg-id:        "open_sansregular";
+@virada-i-font-name:          "opensans-italic-webfont";
+@virada-i-font-svg-id:        "open_sansitalic";
+@virada-b-font-name:          "opensans-bold-webfont";
+@virada-b-font-svg-id:        "open_sansbold";
+@virada-bi-font-name:         "opensans-bolditalic-webfont";
+@virada-bi-font-svg-id:       "open_sansbold_italic";
 
-@auxiliar-n-font-name:        "MuseoSans_500";
-@auxiliar-n-font-svg-id:      "museo_sans500";
+@heading-n-font-name:        "dosis-bold-webfont";
+@heading-n-font-svg-id:      "dosisbold";
+
+@auxiliar-n-font-name:        "yanonekaffeesatz-regular-webfont";
+@auxiliar-n-font-svg-id:      "yanone_kaffeesatzregular";
 
 @font-face {
-    font-family: 'Exo';
+    font-family: "Open Sans";
     src: ~"url('@{icon-font-path}@{virada-n-font-name}.eot')";
     src: ~"url('@{icon-font-path}@{virada-n-font-name}.eot?#iefix') format('embedded-opentype')",
          ~"url('@{icon-font-path}@{virada-n-font-name}.woff') format('woff')",
@@ -70,7 +73,7 @@ body.programacao-single {
     font-style: normal;
 }
 @font-face {
-    font-family: 'Exo';
+    font-family: "Open Sans";
     src: ~"url('@{icon-font-path}@{virada-i-font-name}.eot')";
     src: ~"url('@{icon-font-path}@{virada-i-font-name}.eot?#iefix') format('embedded-opentype')",
          ~"url('@{icon-font-path}@{virada-i-font-name}.woff') format('woff')",
@@ -80,7 +83,7 @@ body.programacao-single {
     font-style: italic;
 }
 @font-face {
-    font-family: 'Exo';
+    font-family: "Open Sans";
     src: ~"url('@{icon-font-path}@{virada-b-font-name}.eot')";
     src: ~"url('@{icon-font-path}@{virada-b-font-name}.eot?#iefix') format('embedded-opentype')",
          ~"url('@{icon-font-path}@{virada-b-font-name}.woff') format('woff')",
@@ -90,7 +93,7 @@ body.programacao-single {
     font-style: normal;
 }
 @font-face {
-    font-family: 'Exo';
+    font-family: "Open Sans";
     src: ~"url('@{icon-font-path}@{virada-bi-font-name}.eot')";
     src: ~"url('@{icon-font-path}@{virada-bi-font-name}.eot?#iefix') format('embedded-opentype')",
          ~"url('@{icon-font-path}@{virada-bi-font-name}.woff') format('woff')",
@@ -102,7 +105,19 @@ body.programacao-single {
 
 
 @font-face {
-    font-family: 'Museo Sans';
+    font-family: "Dosis";
+    src: ~"url('@{icon-font-path}@{heading-n-font-name}.eot')";
+    src: ~"url('@{icon-font-path}@{heading-n-font-name}.eot?#iefix') format('embedded-opentype')",
+         ~"url('@{icon-font-path}@{heading-n-font-name}.woff') format('woff')",
+         ~"url('@{icon-font-path}@{heading-n-font-name}.ttf') format('truetype')",
+         ~"url('@{icon-font-path}@{heading-n-font-name}.svg#@{heading-n-font-svg-id}') format('svg')";
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Yanone Kaffeesatz";
     src: ~"url('@{icon-font-path}@{auxiliar-n-font-name}.eot')";
     src: ~"url('@{icon-font-path}@{auxiliar-n-font-name}.eot?#iefix') format('embedded-opentype')",
          ~"url('@{icon-font-path}@{auxiliar-n-font-name}.woff') format('woff')",
@@ -124,19 +139,19 @@ body.programacao-single {
 @font-size-h6:            ceil((@font-size-base * 0.75)); // ~12px
 
 
-@font-family-sans-serif:  "Exo", Helvetica, Arial, sans-serif;
-@font-family-secondary:   "Museo Sans", Verdana, sans-serif;
+@font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
+@font-family-secondary:   "Yanone Kaffeesatz", Verdana, sans-serif;
 @line-height-base:        1.5;
 
 @icon-font-path:          "fonts/";
 
-@headings-font-family:    @font-family-sans-serif;
+@headings-font-family:    "Dosis", "Open Sans", Helvetica, Arial, sans-serif;
 @headings-font-weight:    bold;
 @headings-small-color:    @gray-dark;
 
 .secondary-font(){
     font-family: @font-family-secondary;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
