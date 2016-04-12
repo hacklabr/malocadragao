@@ -165,9 +165,9 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
             <!-- #main-nav -->
 
             <h2 id="logo-smc" class="logo">
-                <a href="http://www.prefeitura.sp.gov.br/">
-                    <span class="sr-only">Secretaria Municipal de Cultural de São Paulo</span>
-                    <?php html::image("brasao.png", "Secretaria Municipal de Cultural de São Paulo", array("class" => "img-responsive")); ?>
+                <a href="http://portalpbh.pbh.gov.br/pbh/">
+                    <span class="sr-only">Prefeitura Belo Horizonte</span>
+                    <?php html::image("brasao.png", "Prefeitura Belo Horizonte", array("class" => "img-responsive")); ?>
                 </a>
             </h2>
         </header>
