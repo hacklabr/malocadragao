@@ -17,7 +17,7 @@ Template Name: 10 anos
                     <header>
                         <div class="block">
                             <div class="centered text-center">
-                                <?php html::image("logo-large.png", "", array("class" => "img-responsive")); ?>
+                                <?php html::image("logo.svg", "", array("class" => "img-responsive")); ?>
                             </div>
                         </div>
                     </header>
