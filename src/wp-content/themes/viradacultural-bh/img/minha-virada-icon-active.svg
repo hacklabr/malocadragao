@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="45"
+   height="45"
+   id="svg3217"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="icone-nasredes-ativo.svg">
+  <defs
+     id="defs3219" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.7444444"
+     inkscape:cx="21.557227"
+     inkscape:cy="20.904908"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="770"
+     inkscape:window-height="716"
+     inkscape:window-x="595"
+     inkscape:window-y="336"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3222">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1007.3622)">
+    <g
+       id="g3201"
+       transform="matrix(2.1186441,0,0,-2.1186441,-65.966527,1162.5436)"
+       style="fill:#000000">
+      <g
+         transform="translate(41.7562,63.1094)"
+         id="g86"
+         style="fill:#000000">
+        <path
+           inkscape:connector-curvature="0"
+           id="path88"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 0,0 c -2.918,0 -5.3,-2.095 -5.3,-4.691 0,-2.596 2.364,-3.062 5.3,-3.062 2.936,0 5.3,0.466 5.3,3.062 C 5.3,-2.095 2.918,0 0,0" />
+      </g>
+      <g
+         transform="translate(41.7562,63.5928)"
+         id="g90"
+         style="fill:#000000">
+        <path
+           inkscape:connector-curvature="0"
+           id="path92"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="M 0,0 C 1.665,0 3.026,1.987 3.026,3.527 3.026,5.067 1.665,6.302 0,6.302 -1.665,6.302 -3.026,5.067 -3.026,3.527 -3.026,1.987 -1.665,0 0,0" />
+      </g>
+    </g>
+  </g>
+</svg>
