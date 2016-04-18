@@ -56,11 +56,15 @@ body.programacao-single {
 @virada-bi-font-name:         "opensans-bolditalic-webfont";
 @virada-bi-font-svg-id:       "open_sansbold_italic";
 
-@heading-n-font-name:        "dosis-bold-webfont";
-@heading-n-font-svg-id:      "dosisbold";
+@heading-n-font-name:         "droidsans-webfont";
+@heading-n-font-svg-id:       "droid_sansregular";
+@heading-b-font-name:         "droidsans-bold-webfont";
+@heading-b-font-svg-id:       "droid_sansbold";
 
-@auxiliar-n-font-name:        "yanonekaffeesatz-regular-webfont";
-@auxiliar-n-font-svg-id:      "yanone_kaffeesatzregular";
+@auxiliar-n-font-name:        "oswald-regular-webfont";
+@auxiliar-n-font-svg-id:      "oswaldregular";
+@auxiliar-b-font-name:        "oswald-bold-webfont";
+@auxiliar-b-font-svg-id:      "oswaldbold";
 
 @font-face {
     font-family: "Open Sans";
@@ -105,25 +109,47 @@ body.programacao-single {
 
 
 @font-face {
-    font-family: "Dosis";
+    font-family: "Droid Sans";
     src: ~"url('@{icon-font-path}@{heading-n-font-name}.eot')";
     src: ~"url('@{icon-font-path}@{heading-n-font-name}.eot?#iefix') format('embedded-opentype')",
          ~"url('@{icon-font-path}@{heading-n-font-name}.woff') format('woff')",
          ~"url('@{icon-font-path}@{heading-n-font-name}.ttf') format('truetype')",
          ~"url('@{icon-font-path}@{heading-n-font-name}.svg#@{heading-n-font-svg-id}') format('svg')";
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Droid Sans";
+    src: ~"url('@{icon-font-path}@{heading-b-font-name}.eot')";
+    src: ~"url('@{icon-font-path}@{heading-b-font-name}.eot?#iefix') format('embedded-opentype')",
+         ~"url('@{icon-font-path}@{heading-b-font-name}.woff') format('woff')",
+         ~"url('@{icon-font-path}@{heading-b-font-name}.ttf') format('truetype')",
+         ~"url('@{icon-font-path}@{heading-b-font-name}.svg#@{heading-n-font-svg-id}') format('svg')";
     font-weight: bold;
     font-style: normal;
 }
 
 
 @font-face {
-    font-family: "Yanone Kaffeesatz";
+    font-family: "Oswald";
     src: ~"url('@{icon-font-path}@{auxiliar-n-font-name}.eot')";
     src: ~"url('@{icon-font-path}@{auxiliar-n-font-name}.eot?#iefix') format('embedded-opentype')",
          ~"url('@{icon-font-path}@{auxiliar-n-font-name}.woff') format('woff')",
          ~"url('@{icon-font-path}@{auxiliar-n-font-name}.ttf') format('truetype')",
          ~"url('@{icon-font-path}@{auxiliar-n-font-name}.svg#@{auxiliar-n-font-svg-id}') format('svg')";
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: ~"url('@{icon-font-path}@{auxiliar-b-font-name}.eot')";
+    src: ~"url('@{icon-font-path}@{auxiliar-b-font-name}.eot?#iefix') format('embedded-opentype')",
+         ~"url('@{icon-font-path}@{auxiliar-b-font-name}.woff') format('woff')",
+         ~"url('@{icon-font-path}@{auxiliar-b-font-name}.ttf') format('truetype')",
+         ~"url('@{icon-font-path}@{auxiliar-b-font-name}.svg#@{auxiliar-n-font-svg-id}') format('svg')";
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -140,18 +166,25 @@ body.programacao-single {
 
 
 @font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
-@font-family-secondary:   "Yanone Kaffeesatz", Verdana, sans-serif;
+@font-family-secondary:   "Oswald", "Droid Sans", "Open Sans", Helvetica, Arial, sans-serif;
 @line-height-base:        1.5;
 
 @icon-font-path:          "fonts/";
 
-@headings-font-family:    "Dosis", "Open Sans", Helvetica, Arial, sans-serif;
+@headings-font-family:    "Droid Sans", "Open Sans", Helvetica, Arial, sans-serif;
 @headings-font-weight:    bold;
 @headings-small-color:    @gray-dark;
 
-.secondary-font(){
+.headings-font() {
+    font-family: @headings-font-family;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.secondary-font() {
     font-family: @font-family-secondary;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
@@ -475,7 +508,6 @@ body {
      width: 100%;
      /*background: url(img/icone-countdown.png) no-repeat top center;*/
         time {
-            font-family: @font-family-sans-serif;
             line-height: 1;
             display: block;
             width: 60%;
@@ -488,9 +520,10 @@ body {
                 letter-spacing: 2px;
             }
             div:nth-child(2) {
-                font-size: 33px;
+                font-size: 28px;
                 color: @brand-primary;
                 letter-spacing: 1px;
+                text-transform: uppercase;
             }
             div:last-child {
                 font-size: 36px;
