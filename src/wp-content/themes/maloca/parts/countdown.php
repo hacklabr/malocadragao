@@ -8,8 +8,8 @@
     <div>min</div>
     <footer>
         <time>
-            <div>09|10</div>
-            <div>Julho</div>
+            <div>28/04</div>
+            <div>01/05</div>
             <div>2016</div>
         </time>
         <div class="rede-sociais">

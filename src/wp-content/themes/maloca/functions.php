@@ -71,16 +71,16 @@ function viradacultural_addJS() {
             'spaces' => md5_file(realpath(__DIR__.'/app/spaces.json')),
             'spaces-order' => md5_file(realpath(__DIR__.'/app/spaces-order.json')),
         ),
-        'startDate' => '2016-07-09',
+        'startDate' => '2016-04-28',
         'startTime' => '17:00',
-        'startDateTime' => '2016-07-09 17:00',
+        'startDateTime' => '2016-04-28 17:00',
         
-        'endDate' => '2016-07-10',
+        'endDate' => '2016-05-01',
         'endTime' => '23:59',
-        'endDateTime' => '2016-07-10 23:59',
+        'endDateTime' => '2016-05-01 23:59',
         
         'countdown' => [
-            'fgcolor' => '#FFB300',
+            'fgcolor' => '#00aeef',
             
         ]
     ));
