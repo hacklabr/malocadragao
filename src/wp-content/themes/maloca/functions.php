@@ -80,7 +80,7 @@ function viradacultural_addJS() {
         'endDateTime' => '2016-05-01 23:59',
         
         'countdown' => [
-            'fgcolor' => '#00aeef',
+            'fgcolor' => '#005983',
             
         ]
     ));
