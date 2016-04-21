@@ -165,7 +165,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
             <!-- #main-nav -->
 
             <h2 id="logo-smc" class="logo">
-                <a href="http://portalpbh.pbh.gov.br/pbh/">
+                <a>
                     <span class="sr-only">Prefeitura Belo Horizonte</span>
                     <?php html::image("brasao.png", "Prefeitura Belo Horizonte", array("class" => "img-responsive")); ?>
                 </a>

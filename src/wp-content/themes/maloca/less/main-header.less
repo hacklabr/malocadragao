@@ -8,6 +8,7 @@
   position: relative;
   z-index: 20;
   background-color: @brand-auxiliar;
+  background-image: url("img/bg-top.png");
   #logo-virada {
     background-size: contain;
     background-image: url(img/logo.png);
@@ -96,7 +97,7 @@
       .headings-font();
       &:hover {
         color: @brand-primary;
-        background-color: @brand-auxiliar;
+        background-color: @main-header-hover;
         border-color: @brand-primary;
         .box-shadow(-6px 0 0 @brand-accent);
       }
@@ -139,6 +140,8 @@
       position: relative;
       height: 3000px;
       background-color: @brand-auxiliar;
+      background-image: url("img/bg-bottom.png");
+      background-size: 100%; 
       span {
         display: block;
         height: 3000px;
