@@ -533,12 +533,7 @@ app.controller('programacao', function($scope, $rootScope, $http, $location, $ti
              * Viradinha 2015 (id:857)
              */
 
-            var projetos = {
-                '865': 'Virada Coral',
-                '857': 'Viradinha',
-                '794': 'II Mostra de Teatros e Espaços Independentes',
-                '855': '19º Cultura Inglesa Festival'
-            };
+            var projetos = GlobalConfiguration.subProjetos;
 
 
             if(e.project && e.project.id && projetos[e.project.id]){
@@ -602,7 +597,7 @@ app.controller('programacao', function($scope, $rootScope, $http, $location, $ti
             $scope.eventIndex.forEach(function(event){
                 var space = $scope.spacesById[event.entity.spaceId];
 
-                if(event && (txt.trim() === '' || event.text.indexOf(txt) >= 0 || (space && $scope.unaccent(space.name).indexOf(txt) >=0 ) ) && (event.startsAt <= searchEndsAt &&  event.startsAt >= searchStartsAt || event.entity.duration === '24h00')){
+                if(event && (txt.trim() === '' || event.text.indexOf(txt) >= 0 || (space && $scope.unaccent(space.name).indexOf(txt) >=0 ) )){
                     if(!$scope.filters.spaces || ($scope.spacesById[event.entity.spaceId] && $scope.spacesById[event.entity.spaceId].selected))
                         events.push(event.entity);
                 }

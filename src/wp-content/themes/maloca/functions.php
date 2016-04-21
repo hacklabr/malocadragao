@@ -80,8 +80,12 @@ function viradacultural_addJS() {
         'endDateTime' => '2016-05-01 23:59',
         
         'countdown' => [
-            'fgcolor' => '#E618B1',
-            
+            'fgcolor' => '#E618B1'
+        ],
+        
+        'subProjetos' => [
+            '34' => 'Feira Literária',
+            '37' => 'Programação Infantil'
         ]
     ));
 

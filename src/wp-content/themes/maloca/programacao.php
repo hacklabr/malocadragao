@@ -159,7 +159,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="time-filter-item" class="programacao-navbar-item">
+<!--                <div id="time-filter-item" class="programacao-navbar-item">
                     <div class="time-filter-group clearfix">
                         <div class="btn-group">
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" analytics-on="click" analytics-event="Filtro de Horários clicado" analytics-category="Commands">
@@ -183,7 +183,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div id="view-group" class="visible-md visible-lg">
                     <a id="grid-view" ng-class='{"active": data.viewMode === "grid"}' ng-click="data.viewMode = 'grid'" analytics-on="click" analytics-event="Modo Grade clicado" analytics-category="Commands"><div class="icon icon_grid-2x2"></div></a>
                     <a id="list-view" ng-class='{"active": data.viewMode === "list"}' ng-click="data.viewMode = 'list'" analytics-on="click" analytics-event="Modo Lista clicado" analytics-category="Commands"><div class="icon icon_menu-square_alt"></div></a>
@@ -256,7 +256,7 @@
             <% if(duration === '24h00') { %>
                 <time>24 horas</time>
             <% } else { %>
-                <time><%=startsAt%></time>
+                <time><%=moment(startsOn + ' ' +startsAt).format('DD-MM [às] HH:mm')%></time>
             <% } %>
         </span>
         <% if(defaultImageThumb){ %>
@@ -284,7 +284,7 @@
             <% if(duration === '24h00') { %>
                 <time>24 horas</time>
             <% } else { %>
-                <time><%=startsAt%></time>
+                <time><%=moment(startsOn + ' ' +startsAt).format('DD-MM [às] HH:mm')%></time>
             <% } %>
         </span>
         <h1>
