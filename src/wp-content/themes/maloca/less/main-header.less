@@ -1,7 +1,7 @@
 /* =Main header
 -------------------------------------------------------------- */
 #brand {
-  .box-shadow(6px 0 0 @brand-accent inset);
+  /*.box-shadow(6px 0 0 @brand-accent inset);*/
   height: 130px;
   margin: 0;
   padding: 15px;
@@ -9,6 +9,7 @@
   z-index: 20;
   background-color: @brand-auxiliar;
   background-image: url("img/bg-top.png");
+  background-size: 100%;
   #logo-virada {
     background-size: contain;
     background-image: url(img/logo.png);
@@ -24,7 +25,7 @@
 #main-header {
   left: 0;
   width: 225px;
-  .box-shadow(0 0 6px 0 @brand-primary);
+  /*.box-shadow(0 0 6px 0 @brand-primary);*/
   .fixed-bars();
   .transition(width linear .3s);
   background-color: @brand-accent;
@@ -53,7 +54,7 @@
       .text-hide();
     }
     #main-menu>li.has-children:hover {
-      .box-shadow(6px 0 0 @brand-accent inset);
+      /*.box-shadow(6px 0 0 @brand-accent inset);*/
       ul.children {
         left: 137px;
         visibility: visible;
@@ -73,20 +74,20 @@
   margin: 0;
   padding: 0;
   li {
-    .box-shadow(6px 0 0 @brand-primary inset);
+    /*.box-shadow(6px 0 0 @brand-primary inset);*/
     height: 40px;
     line-height: 40px;
     margin: 0;
-    padding: 0 0 0 6px;
+    padding: 0;
     position: relative;
     &:hover {
-      .box-shadow(6px 0 0 @brand-primary inset);
+      /*.box-shadow(6px 0 0 @brand-primary inset);*/
     }
     a {
       color: @brand-auxiliar;
       background-position: 30px center;
       background-repeat: no-repeat;
-      .box-shadow(-6px 0 0 @brand-primary);
+      /*.box-shadow(-6px 0 0 @brand-primary);*/
       display: block;
       height: 40px;
       letter-spacing: 0.03em;
@@ -99,7 +100,7 @@
         color: @brand-auxiliar;
         background-color: @main-header-hover;
         border-color: @brand-primary;
-        .box-shadow(-6px 0 0 @brand-accent);
+        /*.box-shadow(-6px 0 0 @brand-accent);*/
       }
     }
     ul.children {
@@ -128,20 +129,20 @@
       }
     }
     &.has-children:hover {
-      .box-shadow(6px 0 0 @brand-accent inset);
+      /*.box-shadow(6px 0 0 @brand-accent inset);*/
       ul.children {
         left: 237px;
         visibility: visible;
       }
     }
     &.whitespace {
-      .box-shadow(6px 0 0 @brand-accent inset);
+      /*.box-shadow(6px 0 0 @brand-accent inset);*/
       overflow: hidden;
       position: relative;
       height: 3000px;
       background-color: @brand-auxiliar;
       background-image: url("img/bg-bottom.png");
-      background-size: 100%; 
+      background-size: 100% 100%; 
       span {
         display: block;
         height: 3000px;
@@ -150,7 +151,7 @@
         z-index: 15;
       }
       &:hover {
-        .box-shadow(6px 0 0 @brand-accent inset);
+        /*.box-shadow(6px 0 0 @brand-accent inset);*/
       }
     }
   }
