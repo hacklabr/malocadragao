@@ -140,7 +140,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                     $blog_link = function_exists('get_the_posts_home_url') ? get_the_posts_home_url() : get_category_link( $blog_id );
                 ?>
                 <ul id="main-menu" class="nav">
-                    <li><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-virada" title="A Virada"><span>A Virada</span></a></li>
+                    <li><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-maloca" title="A Maloca"><span>A Maloca</span></a></li>
                     <?php if (mostrar_programacao()): ?>
                         <li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li>
                     <?php endif; ?>
