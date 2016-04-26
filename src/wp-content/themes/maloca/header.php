@@ -166,7 +166,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                     <?php if (mostrar_programacao()): ?>
                         <li><a class="nas-redes" href="<?php bloginfo( 'url' ); ?>/nas-redes/" title="Nas redes"><span>Nas redes</span></a></li>
 
-                        <li><a class="minha-maloca" href="<?php bloginfo( 'url' ); ?>/minha-maloca/" title="Minha Maloca"><span>Minha Maloca</span></a></li>
+                        <li><a class="minha-virada" href="<?php bloginfo( 'url' ); ?>/minha-maloca/" title="Minha Maloca"><span>Minha Maloca</span></a></li>
 
                     <?php endif; ?>
                     <?php if( false ): ?>
@@ -222,7 +222,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <?php if (mostrar_programacao()): ?>
                             <li class="col-sm-6 col-xs-6"><a class="nas-redes" href="<?php bloginfo( 'url' ); ?>/nas-redes/" title="Nas redes"><span>Nas redes</span></a></li>
 
-                            <li class="col-sm-6 col-xs-6"><a class="minha-maloca" href="<?php bloginfo( 'url' ); ?>/minha-maloca/" title="Minha Maloca"><span>Minha Maloca</span></a></li>
+                            <li class="col-sm-6 col-xs-6"><a class="minha-virada" href="<?php bloginfo( 'url' ); ?>/minha-maloca/" title="Minha Maloca"><span>Minha Maloca</span></a></li>
 
                         <?php endif; ?>
                         
