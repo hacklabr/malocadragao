@@ -111,10 +111,10 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             <span class="icon icon_close"></span>
                         </button>
-                        <h4>Minha Virada</h4>
+                        <h4>Minha Maloca</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Sua programação foi atualizada! Para acessá-la, visite a página <a href="<?php echo site_url('minha-virada'); ?>">Minha Virada</a>.</p>
+                        <p>Sua programação foi atualizada! Para acessá-la, visite a página <a href="<?php echo site_url('minha-maloca'); ?>">Minha Maloca</a>.</p>
                         <button id="modal-favorita-dismiss" type="button" class="btn btn-primary alignright">Ok, já entendi</button>
                     </div>
                 </div><!-- /.modal-content -->
@@ -125,10 +125,10 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4>Minha Virada</h4>
+                        <h4>Minha Maloca</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Você acaba de associar sua conta do Facebook à plataforma da Virada Cultural, tornando pública algumas informações sobre seu acesso, como <strong>em quais eventos pretende comparecer</strong>.<br><br>
+                        <p>Você acaba de associar sua conta do Facebook à plataforma da Maloca Dragão, tornando pública algumas informações sobre seu acesso, como <strong>em quais eventos pretende comparecer</strong>.<br><br>
                             Para mais informações consulte nossos <a href="http://viradacultural.prefeitura.sp.gov.br/2015/termos-de-uso/"><strong>termos de uso</strong></a> e nossa <a href="http://viradacultural.prefeitura.sp.gov.br/2015/politica-de-privacidade/"><strong>política de privacidade</strong></a>.<br><br>
                             Deseja continuar?</p><br>
                         <p class="alignright clearfix" style="white-space: nowrap">
@@ -166,7 +166,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                     <?php if (mostrar_programacao()): ?>
                         <li><a class="nas-redes" href="<?php bloginfo( 'url' ); ?>/nas-redes/" title="Nas redes"><span>Nas redes</span></a></li>
 
-                        <li><a class="minha-virada" href="<?php bloginfo( 'url' ); ?>/minha-virada/" title="Minha Virada"><span>Minha Virada</span></a></li>
+                        <li><a class="minha-maloca" href="<?php bloginfo( 'url' ); ?>/minha-maloca/" title="Minha Maloca"><span>Minha Maloca</span></a></li>
 
                     <?php endif; ?>
                     <?php if( false ): ?>
@@ -211,7 +211,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 </div>
                 <div class="collapse navbar-collapse" id="collapsed-navigation">
                     <ul class="nav navbar-nav">
-                        <li class="col-sm-6 col-xs-6"><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-virada" title="A Virada"><span>A Virada</span></a></li>
+                        <li class="col-sm-6 col-xs-6"><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-virada" title="A Maloca"><span>A Maloca</span></a></li>
                         <?php if (mostrar_programacao()): ?>
                             <li class="col-sm-6 col-xs-6"><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li>
                         <?php endif; ?>
@@ -222,7 +222,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <?php if (mostrar_programacao()): ?>
                             <li class="col-sm-6 col-xs-6"><a class="nas-redes" href="<?php bloginfo( 'url' ); ?>/nas-redes/" title="Nas redes"><span>Nas redes</span></a></li>
 
-                            <li class="col-sm-6 col-xs-6"><a class="minha-virada" href="<?php bloginfo( 'url' ); ?>/minha-virada/" title="Minha Virada"><span>Minha Virada</span></a></li>
+                            <li class="col-sm-6 col-xs-6"><a class="minha-maloca" href="<?php bloginfo( 'url' ); ?>/minha-maloca/" title="Minha Maloca"><span>Minha Maloca</span></a></li>
 
                         <?php endif; ?>
                         
