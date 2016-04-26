@@ -16,11 +16,14 @@
                 <div class="carousel-inner">
                     <?php while ($homefeatures->have_posts()) : $homefeatures->the_post(); ?>
                         <div class="item" style="overflow:hidden;">
-                            <?php if (has_post_thumbnail()) : ?>
-                                <?php the_post_thumbnail('large', array('style' => 'width:100%;')); ?>
-                            <?php endif; ?>
-                            <div class="carousel-caption">
-                                <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+                            <?php 
+                                $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID));
+                                $url = $thumb[0];
+                            ?>
+                            <div class="background" style="background-image:url('<?php echo $url; ?>');">
+                                <div class="carousel-caption">
+                                    <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+                                </div>
                             </div>
                         </div>
                     <?php endwhile; ?>
