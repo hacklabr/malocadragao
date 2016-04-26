@@ -85,7 +85,14 @@ function viradacultural_addJS() {
         
         'subProjetos' => [
             '34' => 'Feira Literária',
-            '37' => 'Programação Infantil'
+            '37' => 'Programação Infantil',
+            '38' => '3ª Semana do Cinema Brasileiro',
+        ],
+        
+        'minhaViradaApiUrl' => MINHA_VIRADA_API_URL,
+        'minhaViradaFacebookApp' => [
+            'id' => FACEBOOK_APP_ID,
+            'secret' => FACEBOOK_APP_SECRET
         ]
     ));
 

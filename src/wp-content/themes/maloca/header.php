@@ -16,8 +16,13 @@
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <meta name="apple-itunes-app" content="app-id=999520281">
-        <meta name="google-play-app" content="app-id=br.com.lfdb.viradapp">
+        <?php if(defined('ITUNES_APP_ID')): ?>
+            <meta name="apple-itunes-app" content="app-id=<?php echo ITUNES_APP_ID; ?>">
+        <?php endif; ?>
+            
+        <?php if(defined('GOOGLEPLAY_APP_ID')): ?>
+            <meta name="google-play-app" content="app-id=<?php echo GOOGLEPLAY_APP_ID; ?>">
+        <?php endif; ?>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php
@@ -79,13 +84,23 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
         <?php if(get_query_var('virada_tpl')) MinhaVirada::add_JS(); ?>
         <?php if (is_single()) { ?>
             <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1379698002311750";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
+            <script>
+                window.fbAsyncInit = function() {
+                  FB.init({
+                    appId      : '<?php echo FACEBOOK_APP_ID ?>',
+                    xfbml      : true,
+                    version    : 'v2.6'
+                  });
+                };
+
+                (function(d, s, id){
+                   var js, fjs = d.getElementsByTagName(s)[0];
+                   if (d.getElementById(id)) {return;}
+                   js = d.createElement(s); js.id = id;
+                   js.src = "//connect.facebook.net/pt_BR/sdk.js";
+                   fjs.parentNode.insertBefore(js, fjs);
+                 }(document, 'script', 'facebook-jssdk'));
+            </script>
         <?php } ?>
 
         <!-- Modal evento salvo na Minha Virada -->

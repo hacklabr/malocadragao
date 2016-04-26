@@ -37,6 +37,22 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+// NAS REDES
+define('NAS_REDES__HOST', 'localhost');
+define('NAS_REDES__USER', 'username_here');
+define('NAS_REDES__PASS', 'password_here');
+define('NAS_REDES__DB_NAME', 'nas_redes');
+
+// MINHA VIRADA - FACEBOOK APP
+define('FACEBOOK_APP_ID', '');
+define('FACEBOOK_APP_SECRET', '');
+
+define('MINHA_VIRADA_API_URL', '');
+
+define('ITUNES_APP_ID', '');
+define('GOOGLEPLAY_APP_ID', '');
+
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
