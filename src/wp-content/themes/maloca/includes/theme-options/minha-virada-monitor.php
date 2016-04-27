@@ -6,9 +6,9 @@ function minha_virada_menu() {
     // Por padrão criamos uma página exclusiva para as opções desse site
     // Mas se quiser você pode colocar ela embaixo de aparencia, opções, ou o q vc quiser. O modelo para todos os casos estão comentados abaixo
 
-    $topLevelMenuLabel = 'Minhas Viradas';
-    $page_title = 'Minhas Viradas';
-    $menu_title = 'Minhas Viradas';
+    $topLevelMenuLabel = 'Minhas Malocas';
+    $page_title = 'Minhas Malocas';
+    $menu_title = 'Minhas Malocas';
 
     /* Top level menu */
     add_submenu_page('minha_virada', $page_title, $menu_title, 'manage_options', 'minha_virada', 'minha_virada_page_callback_function');
@@ -48,7 +48,7 @@ function minha_virada_page_callback_function() {
     $events = 0;
     ?>
     <div class="wrap span-20">
-        <h2>Minhas Viradas</h2>
+        <h2>Minhas Malocas</h2>
         <h3>Total de <?php echo $total; ?> pessoas</h3>
         <ul>
         <?php if (isset($_GET['show']) && $_GET['show'] == 'all'): ?>
