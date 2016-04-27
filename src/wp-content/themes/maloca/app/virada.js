@@ -341,7 +341,7 @@ app.controller('programacao', function($scope, $rootScope, $http, $location, $ti
     };
 
     $scope.data = {
-        viewBy: 'space',
+        viewBy: GlobalConfiguration.defaultViewBy,
         viewMode: $scope.smallDevice ? 'list' : 'grid',
         searchText: $location.$$hash
     };
