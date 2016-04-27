@@ -25,7 +25,7 @@ Template Name: Leaflet
             $('#leaflet-container').height($(window).height() - $('#main-footer').innerHeight());
             map.invalidateSize();
 
-            var layersPath = 'http://viradacultural.prefeitura.sp.gov.br/2015/api/map/';
+            var layersPath = MINHA_VIRADA_API_URL . '/map/';
             var baseLayer = L.tileLayer('https://{s}.tiles.mapbox.com/v4/duncangraham.b134a19e/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImdQMzI4WjgifQ.d-Uyr7NBjrJVz9z82uk5Xg', {
                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
@@ -38,7 +38,7 @@ Template Name: Leaflet
 //                    iconSize: [27, 27],
 //                    iconAnchor: [13, 27],
 //                    popupAnchor:  [1, -24],
-                    iconUrl: 'http://viradacultural.prefeitura.sp.gov.br/2015/api/map/icons/' + item + '.png'
+                    iconUrl: MINHA_VIRADA_API_URL . '/map/icons/' + item + '.png'
                 });
                 $.getJSON(layersPath + item + '.json', function(data) {
                     var myLayer = L.geoJson(data, {

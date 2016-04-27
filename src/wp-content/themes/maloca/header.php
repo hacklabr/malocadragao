@@ -179,8 +179,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
             <h2 id="logo-smc" class="logo">
                 <a>
-                    <span class="sr-only">Prefeitura Belo Horizonte</span>
-                    <?php html::image("brasao.png", "Prefeitura Belo Horizonte", array("class" => "img-responsive")); ?>
+                    <?php html::image("brasao.png", "", array("class" => "img-responsive")); ?>
                 </a>
             </h2>
         </header>

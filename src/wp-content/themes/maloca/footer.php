@@ -1,4 +1,5 @@
     <footer id="main-footer" class="clearfix">
+        <?php if(false): ?>
         <ul class="sr-only">
             <li>
                 Realização
@@ -27,6 +28,7 @@
                 </ul>
             </li>
         </ul>
+        <?php endif; ?>
         <!--<p class="text-center">
             <?php html::image("logos-990.png", "", array("class" => "img-responsive visible-sm visible-md visible-lg")); ?>
             <?php html::image("logos-320.png", "", array("class" => "img-responsive visible-xs")); ?>
