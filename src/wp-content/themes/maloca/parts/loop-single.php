@@ -16,7 +16,7 @@
 	<!-- .post-content -->
 	<footer class="clearfix">
 		<?php if ('noticias' == get_post_type() || 'imprensa' == get_post_type()) { ?>
-			<p>Comunicação - Virada Cultural</p>
+			<p>Comunicação - <?php echo SITE_COMUNICACAO ?></p>
 		<?php } else { ?>
 			<div id="author-info" class="clearfix">
 				<?php the_author_posts_link(); ?>

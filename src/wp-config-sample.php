@@ -52,6 +52,8 @@ define('MINHA_VIRADA_API_URL', '');
 define('ITUNES_APP_ID', '');
 define('GOOGLEPLAY_APP_ID', '');
 
+// aparece nos fotters de notícias ou imprensa
+define('SITE_COMUNICACAO', 'Maloca Dragão');
 
 /**#@+
  * Authentication Unique Keys and Salts.
