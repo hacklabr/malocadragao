@@ -1231,6 +1231,7 @@ footer {
     border-bottom: 1px solid @body-bg;
     background: #e9e9e9;
     padding: 15px;
+    position: relative;
     &.evento-24h {
         background: @body-bg;
         border-bottom: 1px solid #f6f6f6;
@@ -1247,14 +1248,18 @@ footer {
         padding-right: 15px;
         color: @brand-accent;
         @media (max-width: @screen-xs-max) {
+            display: block;
             font-size: 12px;
             line-height: 1.5;
-            text-align: center;
-            min-width:40px;
+            padding-right: 0;
+            width: 100%;
         }
         .icon {
             vertical-align: middle;
             margin-right: 3px;
+            @media (max-width: @screen-xs-max) {
+                vertical-align: top;
+            }
         }
     }
     h1 {
@@ -1265,9 +1270,11 @@ footer {
         border-left: 1px solid @gray-light;
         border-right: 1px solid @gray-light;
         @media (max-width: @screen-xs-max) {
+            border: 0;
             font-size: 14px;
             line-height: 1.5;
-            max-width: 80%;
+            padding-right: 0;
+            width: 100%;
         }
     }
     .event-space {
@@ -1290,6 +1297,15 @@ footer {
         padding-left: 15px;
         text-align: center;
         color: @brand-accent;
+        @media (max-width: @screen-xs-max) {
+            float: none;
+            margin-top: -10px;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            width: initial;
+        }
+
     }
     &:hover {
         background: #fff;
