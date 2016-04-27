@@ -89,7 +89,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                   FB.init({
                     appId      : '<?php echo FACEBOOK_APP_ID ?>',
                     xfbml      : true,
-                    version    : 'v2.6'
+                    version    : 'v2.0'
                   });
                 };
 
