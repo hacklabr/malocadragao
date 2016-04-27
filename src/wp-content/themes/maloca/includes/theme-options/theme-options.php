@@ -89,7 +89,7 @@ function theme_options_page_callback_function() {
                 </div>
 
                 <h3>Redes Sociais</h3>
-                <p>Insira os links (com http) para as páginas da Virada nas Redes Sociais</p>
+                <p>Insira os links (com http) para as páginas da Maloca nas Redes Sociais</p>
                 <div>
 
 

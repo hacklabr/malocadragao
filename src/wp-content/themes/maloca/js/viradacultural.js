@@ -42,8 +42,8 @@ var hl = {
     $(document).ready(function() {
 
         $.smartbanner({
-            title: 'Virada Cultural 2015', // What the title of the app should be in the banner (defaults to <title>)
-            author: 'Instituto TIM', // What the author of the app should be in the banner (defaults to <meta name="author"> or hostname)
+            title: 'Maloca Dragão 2016', // What the title of the app should be in the banner (defaults to <title>)
+            author: 'Centro Dragão do Mar de Arte e Cultura', // What the author of the app should be in the banner (defaults to <meta name="author"> or hostname)
             price: 'Gratuíto', // Price of the app
             appStoreLanguage: 'pt-br', // Language code for App Store
 //            inAppStore: 'On the App Store', // Text of price for iOS
