@@ -199,7 +199,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         </button>
                         <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
                             <span class="sr-only"><?php bloginfo( 'name' ); ?></span>
-                            <span class="v">V</span>irada Cultur<span class="v">a</span>l
+                            <?php html::image('logo-mobile.png', 'Maloca Dragão', ['style'=>'margin:0 auto; height:1.2em']); ?>
                         </a>
                         <?php if($paginaprogramacao == 'programacao'): ?>
                             <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#programacao-navbar">
