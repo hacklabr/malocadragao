@@ -14,7 +14,7 @@
    id="svg3217"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Novo documento 2">
+   sodipodi:docname="virada-icon.svg">
   <defs
      id="defs3219" />
   <sodipodi:namedview
@@ -24,17 +24,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.0619356"
-     inkscape:cx="15.162093"
-     inkscape:cy="23.343565"
+     inkscape:zoom="8.1238712"
+     inkscape:cx="4.7473971"
+     inkscape:cy="17.455337"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="770"
-     inkscape:window-height="716"
-     inkscape:window-x="595"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
      inkscape:window-y="336"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata3222">
     <rdf:RDF>
@@ -52,18 +52,11 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-1007.3622)">
-    <g
-       id="g3164"
-       transform="matrix(2.1186441,0,0,-2.1186441,-65.87271,1680.2156)">
-      <g
-         transform="translate(47.0802,301.0648)"
-         id="g110">
-        <path
-           inkscape:connector-curvature="0"
-           id="path112"
-           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           d="m 0,0 c -3.541,-2.572 -8.492,-1.78 -11.059,1.769 -2.566,3.55 -1.775,8.512 1.766,11.084 3.139,2.279 7.384,1.916 10.096,-0.667 -3.006,2.972 -7.801,3.421 -11.333,0.855 -3.934,-2.857 -4.812,-8.369 -1.961,-12.312 2.85,-3.943 8.35,-4.823 12.285,-1.966 3.532,2.565 4.6,7.27 2.718,11.059 C 4.116,6.436 3.138,2.279 0,0" />
-      </g>
-    </g>
+    <path
+       style="fill:#ffffff;fill-rule:evenodd"
+       inkscape:connector-curvature="0"
+       id="path19"
+       d="m 31.387453,1007.3626 -0.731239,0 0,0 0,0.033 -8.15622,18.5726 -8.156214,-18.5726 0,-0.033 0,0 -0.731246,0 -1.968747,0 0,44.9995 2.699993,0 0,-35.8133 0,-2.2632 6.63747,15.1108 0,0.033 0.61875,1.3645 2.924988,6.6236 c 0.81562,1.6641 1.040615,3.4282 -0.05626,4.7262 -0.534377,0.6325 -1.237499,0.9652 -1.968746,0.9652 -0.703124,0 -1.43437,-0.3326 -1.96874,-0.9652 -1.09687,-1.298 -0.871875,-3.0621 -0.0281,-4.7262 l 1.012491,-2.3299 -1.518743,-3.4282 -1.349989,3.0622 -0.9,1.897 0,0.033 c -1.181244,2.463 -0.871868,5.6249 0.9,7.7217 1.040615,1.2649 2.446859,1.8971 3.853104,1.8971 1.406246,0 2.812491,-0.6322 3.881236,-1.8971 1.743744,-2.0968 2.053119,-5.2587 0.871869,-7.7217 l 0,-0.033 -0.899992,-1.897 -2.33437,-5.3255 6.637478,-15.1107 0,1.3313 0,36.7452 2.699986,0 0,-44.9995 -1.968747,0 z"
+       class="fil0" />
   </g>
 </svg>
