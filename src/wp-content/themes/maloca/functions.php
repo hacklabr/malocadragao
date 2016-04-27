@@ -284,7 +284,7 @@ function virada_custom_url_rewrites($rules) {
         "programacao/atracoes/?$" => "index.php?virada_tpl=programacao-atracoes",
         "programacao/atracao/?$" => 'index.php?virada_tpl=programacao-atracoes-single',
         "programacao/local/?$" => 'index.php?virada_tpl=programacao-locais-single',
-        "minha-virada/?$" => 'index.php?virada_tpl=minha-virada'
+        "minha-maloca/?$" => 'index.php?virada_tpl=minha-virada'
     );
 
     return $new_rules + $rules;
