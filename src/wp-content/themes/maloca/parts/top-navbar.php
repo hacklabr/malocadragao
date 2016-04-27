@@ -23,7 +23,7 @@
                 <?php } else if (is_page_template('page-nas-redes.php')) { ?>
                     Nas redes <small>#<?php echo get_theme_option('hashtag'); ?></small>
                 <?php } else if (get_query_var('virada_tpl') && get_query_var('virada_tpl') == 'minha-virada') { ?>
-                    Minha Virada
+                    Minha Maloca
                 <?php } else if (get_query_var('virada_tpl') && get_query_var('virada_tpl') == 'programacao-locais-single') { ?>
                     LOCAL
                 <?php } else if (get_query_var('virada_tpl') && get_query_var('virada_tpl') == 'programacao-atracoes-single') { ?>

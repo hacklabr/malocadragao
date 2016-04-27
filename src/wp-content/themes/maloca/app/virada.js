@@ -768,7 +768,7 @@ app.controller('minha-virada', function($rootScope, $scope, $http, $location, $t
 
     $scope.hasEvents = false;
     $scope.userEvents = [];
-    $scope.user_name = 'Minha Virada';
+    $scope.user_name = 'Minha Maloca';
     $scope.connected = false;
     $scope.home = true; // não estou vendo perfil de ninguém
     $scope.itsme = false;
