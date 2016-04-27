@@ -93,7 +93,8 @@ function viradacultural_addJS() {
         'minhaViradaFacebookApp' => [
             'id' => FACEBOOK_APP_ID,
             'secret' => FACEBOOK_APP_SECRET
-        ]
+        ],
+        'programacaoDefaultViewBy' => PROGRAMACAO_DEFAULT_VIEWBY
     ));
 
 

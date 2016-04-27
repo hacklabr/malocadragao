@@ -55,6 +55,9 @@ define('GOOGLEPLAY_APP_ID', '');
 // aparece nos fotters de notícias ou imprensa
 define('SITE_COMUNICACAO', 'Maloca Dragão');
 
+// valores possíveis: 'space', 'time', 'name'
+define('PROGRAMACAO_DEFAULT_VIEWBY', 'space');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
