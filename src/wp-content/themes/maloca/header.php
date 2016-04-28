@@ -211,7 +211,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 </div>
                 <div class="collapse navbar-collapse" id="collapsed-navigation">
                     <ul class="nav navbar-nav">
-                        <li class="col-sm-6 col-xs-6"><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-virada" title="A Maloca"><span>A Maloca</span></a></li>
+                        <li class="col-sm-6 col-xs-6"><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-maloca" title="A Maloca"><span>A Maloca</span></a></li>
                         <?php if (mostrar_programacao()): ?>
                             <li class="col-sm-6 col-xs-6"><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li>
                         <?php endif; ?>
