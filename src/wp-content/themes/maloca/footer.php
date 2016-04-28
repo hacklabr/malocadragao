@@ -41,7 +41,7 @@
 <script type="text/html" id="template-lista-de-amigos">
 
     <% for(var i in friends){ var friend = friends[i]; if(!friend) continue; if(i >= 3) break; %>
-        <a href="<?php bloginfo('url') ?>/minha-virada/##<%=friend.uid%>" class="friend" data-toggle="tooltip" title="<%=friend.name%>">
+        <a href="<?php bloginfo('url') ?>/minha-maloca/##<%=friend.uid%>" class="friend" data-toggle="tooltip" title="<%=friend.name%>">
             <!--aqui entra um avatar aleatório ou do último amigo a favoritar esse evento -->
             <img src="<%=friend.picture%>"/>
         </a>

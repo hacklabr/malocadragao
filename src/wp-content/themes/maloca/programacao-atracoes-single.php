@@ -85,7 +85,7 @@
 <% } %>
 <br>
 <% for(var i in friends){ var friend = friends[i]; if(!friend) continue; %>
-<a href="<?php bloginfo('url') ?>/minha-virada/##<%= friend.uid %>" class="friend" data-toggle="tooltip" title="<%=friend.name%>"><img src="<%=friend.picture%>"/></a>
+<a href="<?php bloginfo('url') ?>/minha-maloca/##<%= friend.uid %>" class="friend" data-toggle="tooltip" title="<%=friend.name%>"><img src="<%=friend.picture%>"/></a>
 <% } %>
 </script>
 <!-- .container-fluid -->
