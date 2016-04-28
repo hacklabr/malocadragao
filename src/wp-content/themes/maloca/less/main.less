@@ -1237,7 +1237,7 @@ footer {
         border-bottom: 1px solid #f6f6f6;
     }
     @media (max-width: @screen-xs-max) {
-        padding: 5px 30px 5px 5px;
+        padding: 8px 30px 8px 8px;
     }
     img {
         display: none;
@@ -1249,8 +1249,10 @@ footer {
         color: @brand-accent;
         @media (max-width: @screen-xs-max) {
             display: block;
+            float: none;
             font-size: 12px;
             line-height: 1.5;
+            margin-bottom: 5px;
             padding-right: 0;
             width: 100%;
         }
@@ -1271,9 +1273,10 @@ footer {
         border-right: 1px solid @gray-light;
         @media (max-width: @screen-xs-max) {
             border: 0;
+            float: none;
             font-size: 14px;
             line-height: 1.5;
-            padding-right: 0;
+            padding: 0 10px 0 0;
             width: 100%;
         }
     }
@@ -1284,11 +1287,22 @@ footer {
         padding-left: 15px;
         padding-right: 15px;
         .secondary-font();
+        @media (max-width: @screen-xs-max) {
+            font-size: 12px;
+            float: none;
+            margin-top: 5px;
+            padding: 0;
+            width: 100%;
+        }
         .icon {
             color: @brand-accent;
             font-size: 16px;
             vertical-align: middle;
             margin-right: 3px;
+            @media (max-width: @screen-xs-max) {
+                font-size: 12px;
+                vertical-align: top;
+            }
         }
     }
     .favorite {
@@ -1302,6 +1316,7 @@ footer {
             margin-top: -10px;
             padding: 0;
             position: absolute;
+            right: 10px;
             top: 50%;
             width: initial;
         }
