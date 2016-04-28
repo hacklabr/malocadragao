@@ -166,6 +166,7 @@ app.controller('espaco', function($scope, $rootScope, $http, $location, $timeout
         data.forEach(function(e){
             if(e.spaceId == spaceId){
                 e.url = eventUrl(e.id);
+                e.starts = moment(e.startsOn + ' ' + e.startsAt);
                 $scope.spaceEvents.push(e);
             }
         });
