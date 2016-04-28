@@ -40,7 +40,7 @@
                     <div class="timeline clearfix">
                         <div class="event-group js-event-{{event.id}}" id="event-group-{{event.id}}" ng-repeat="event in userEvents" on-finish-render="minhavirada_finishRender">
                             <div class="timeline-time" ng-if="event.duration === '24h00'">24 horas</div>
-                            <div class="timeline-time" ng-if="event.duration !== '24h00'">{{event.startsAt}}</div>
+                            <div class="timeline-time" ng-if="event.duration !== '24h00'">{{event.starts.format('DD-MM [às] HH:mm')}}</div>
                             <article class="event clearfix event-grid" ng-class="{'no-thumb' : !event.defaultImageThumb, 'evento-24h': event.duration === '24h00'}">
                                 <a href="{{event.url}}">
                                     <div class="event-content clearfix">

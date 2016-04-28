@@ -852,6 +852,7 @@ app.controller('minha-virada', function($rootScope, $scope, $http, $location, $t
                         if(e.id == data.events[i]) {
                             $scope.userEvents.push(e);
                             e.url = eventUrl(e.id);
+                            e.starts = moment(e.startsOn + ' ' + e.startsAt);
                             break;
                         }
                     }
