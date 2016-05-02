@@ -159,8 +159,9 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                     <?php if (mostrar_programacao()): ?>
                         <li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li>
                     <?php endif; ?>
-                        <li><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/como-chegar/" title="Como Chegar"><span>Como Chegar</span></a></li>
-                        <li><a class="noticias" href="<?php echo get_post_type_archive_link( 'noticias' ); ?>" title="Notícias"><span>Notícias</span></a></li>
+                    <li><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/como-chegar/" title="Como Chegar"><span>Como Chegar</span></a></li>
+                    <li><a class="noticias" href="<?php echo get_post_type_archive_link( 'noticias' ); ?>" title="Notícias"><span>Notícias</span></a></li>
+                    <li><a class="gallery" href="" title="<?php bloginfo( 'url' ); ?>/galeria-de-fotos/"><span>Galeria de Fotos</span></a></li>
                     <?php /*
                     <li><a class="blog" href="<?php echo esc_url( $blog_link ); ?>" title="Blog"><span>Blog</span></a></li>
                     */?>
@@ -217,6 +218,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <?php endif; ?>
                         <li class="col-sm-6 col-xs-6"><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/como-chegar/" title="Como chegar"><span>Como Chegar</span></a></li>
                         <li class="col-sm-6 col-xs-6"><a class="noticias" href="<?php echo get_post_type_archive_link( 'noticias' ); ?>" title="Notícias"><span>Notícias</span></a></li>
+                        <li class="col-sm-6 col-xs-6"><a class="gallery" href="<?php bloginfo( 'url' ); ?>/galeria-de-fotos/" title="Galeria de Fotos"><span>Galeria de Fotos</span></a></li>
                         <!-- <li class="col-sm-6 col-xs-6"><a class="blog" href="<?php echo esc_url( $blog_link ); ?>" title="Blog"><span>Blog</span></a></li> -->
                         
                         <?php if(false): ?>
