@@ -157,7 +157,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <ul id="main-menu" class="nav">
                     <li><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-maloca" title="A Maloca"><span>A Maloca</span></a></li>
                     <?php if (mostrar_programacao()): ?>
-                        <li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li>
+                        <li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Atrações"><span>Atrações</span></a></li>
                     <?php endif; ?>
                     <li><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/como-chegar/" title="Como Chegar"><span>Como Chegar</span></a></li>
                     <li><a class="noticias" href="<?php echo get_post_type_archive_link( 'noticias' ); ?>" title="Notícias"><span>Notícias</span></a></li>
@@ -214,7 +214,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                     <ul class="nav navbar-nav">
                         <li class="col-sm-6 col-xs-6"><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-maloca" title="A Maloca"><span>A Maloca</span></a></li>
                         <?php if (mostrar_programacao()): ?>
-                            <li class="col-sm-6 col-xs-6"><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li>
+                            <li class="col-sm-6 col-xs-6"><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Atrações"><span>Atrações</span></a></li>
                         <?php endif; ?>
                         <li class="col-sm-6 col-xs-6"><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/como-chegar/" title="Como chegar"><span>Como Chegar</span></a></li>
                         <li class="col-sm-6 col-xs-6"><a class="noticias" href="<?php echo get_post_type_archive_link( 'noticias' ); ?>" title="Notícias"><span>Notícias</span></a></li>
