@@ -231,7 +231,7 @@ class DCache {
  */
 function congelado_last_login($login) {
     global $user_ID;
-    $user = get_userdatabylogin($login);
+    $user = get_user_by('login', $login);
     update_usermeta($user->ID, 'last_login', time());
 }
 add_action('wp_login', 'congelado_last_login');
