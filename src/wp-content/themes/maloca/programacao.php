@@ -299,16 +299,18 @@
     </article>
 </script>
 
-<script>
-document.addEventListener('keyup', function(e){
-    if(e.ctrlKey && e.shiftKey && e.altKey && e.keyCode == 69){
-        jQuery('.js-edit').html( function (){
-            return atob('<?php echo base64_encode ('&nbsp; (<a href="'.MAPASCULTURAIS_URL.'/<%=e%>/edita/<%=id%>">Editar</a>)');?>')
-                .replace('<%=e%>', jQuery(this).data('e').split('|')[0])
-                .replace('<%=id%>', jQuery(this).data('e').split('|')[1])
-            }
-        ).removeClass('hidden');
-    }
-});
-</script>
+<?php if (current_user_can('edit_posts') && defined('MAPASCULTURAIS_URL') ): ?>
+  <script>
+  document.addEventListener('keyup', function(e){
+      if(e.ctrlKey && e.shiftKey && e.altKey && e.keyCode == 69){
+          jQuery('.js-edit').html( function (){
+              return atob('<?php echo base64_encode ('&nbsp; (<a href="'.MAPASCULTURAIS_URL.'/<%=e%>/edita/<%=id%>">Editar</a>)');?>')
+                  .replace('<%=e%>', jQuery(this).data('e').split('|')[0])
+                  .replace('<%=id%>', jQuery(this).data('e').split('|')[1])
+              }
+          ).removeClass('hidden');
+      }
+  });
+  </script>
+<?php endif; ?>
 <?php get_footer(); ?>

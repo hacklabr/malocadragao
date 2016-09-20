@@ -35,7 +35,7 @@
             </header>
             <div class="post-content clearfix">
                 <div class="post-type-icon">
-                    <?php html::image('virada-icon.svg') ?>
+                    <?php html::image('virada-icon.svg', 'ícone representativo') ?>
                 </div>
                 <p>{{event.shortDescription}}</p>
             </div>
