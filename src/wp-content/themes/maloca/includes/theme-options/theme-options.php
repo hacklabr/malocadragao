@@ -3,8 +3,18 @@
 function get_theme_default_options() {
 
     // Coloquei aqui o nome e o valor padrão de cada opção que você criar
-
     return array(
+        'mapasculturais_api_url' => 'http://mapa.cultura.ce.gov.br/api/',
+        'mapasculturais_project_id' => '33',
+        'mapasculturais_agent_ids' => '',
+        'mapasculturais_images_url_from' => 'http://mapa.cultura.ce.gov.br/files/',
+        'mapasculturais_images_url_to' => 'http://mapa.cultura.ce.gov.br/files/',
+        'mapasculturais_date_from' => '2016-04-28',
+        'mapasculturais_date_to' => '2016-05-01',
+        'mapasculturais_time_from' => '17:00',
+        'mapasculturais_time_to' => '23:59',
+
+        'main_color' => '#E618B1',
         'transparencia_url' => '',
         'social_networks' => array(
             'facebook' => 'http://facebook.com/viradacultura',
@@ -70,7 +80,7 @@ function theme_options_page_callback_function() {
                     <label for="transparencia_url"><strong>Url da página de transparência <em>(deixe em branco para não exibir o botão)</em></strong></label><br/>
                     <input type="text" id="transparencia_url" class="text" name="theme_options[transparencia_url]" value="<?php echo htmlspecialchars($options['transparencia_url']) ?>"  style="width: 80%"/>
                 </p>
-                
+
                 <h3>Programação</h3>
 
                 <p>Se isto estiver marcado, qualquer visitante poderá ver o site. Caso contrário, apenas usuários conectados poderão vê-la.</p>
@@ -78,15 +88,57 @@ function theme_options_page_callback_function() {
                 <input type="checkbox" id="programacao_published" class="text" name="theme_options[programacao_published]" value="1" <?php checked(true, get_theme_option('programacao_published'), true); ?>/>
                 <label for="programacao_published"><strong>Tornar a programação pública</strong></label><br/>
 
+                <p>
+                  <label for="mapasculturais_api_url"><strong>URL da API do Mapas Culturais</strong></label><br/>
+                  <input type="text" id="mapasculturais_api_url" class="text" name="theme_options[mapasculturais_api_url]" value="<?php echo htmlspecialchars($options['mapasculturais_api_url']) ?>"  style="width: 80%"/>
+                </p>
+                <p>
+                  <label for="mapasculturais_project_id"><strong>ID do projeto no Mapas Culturais</strong></label><br/>
+                  <input type="text" id="mapasculturais_project_id" class="text" name="theme_options[mapasculturais_project_id]" value="<?php echo htmlspecialchars($options['mapasculturais_project_id']) ?>"  style="width: 80%"/>
+                </p>
+                <p>
+                  <label for="mapasculturais_agent_ids"><strong>ID's dos agentes autorizados do Mapas Culturais</strong></label><br/>
+                  <input type="text" id="mapasculturais_agent_ids" class="text" name="theme_options[mapasculturais_agent_ids]" value="<?php echo htmlspecialchars($options['mapasculturais_agent_ids']) ?>"  style="width: 80%"/>
+                </p>
+
+                <p>
+                  <label for="mapasculturais_images_url_from"><strong>URL original de imagens do Mapas Culturais</strong></label><br/>
+                  <input type="text" id="mapasculturais_images_url_from" class="text" name="theme_options[mapasculturais_images_url_from]" value="<?php echo htmlspecialchars($options['mapasculturais_images_url_from']) ?>"  style="width: 80%"/>
+                </p>
+                <p>
+                  <label for="mapasculturais_images_url_to"><strong>URL de imagens para ser usada</strong></label><br/>
+                  <input type="text" id="mapasculturais_images_url_to" class="text" name="theme_options[mapasculturais_images_url_to]" value="<?php echo htmlspecialchars($options['mapasculturais_images_url_to']) ?>"  style="width: 80%"/>
+                </p>
+
+                <p>
+                  <label for="mapasculturais_date_from"><strong>Data de início para mostrar eventos</strong></label><br/>
+                  <input type="text" id="mapasculturais_date_from" class="text" name="theme_options[mapasculturais_date_from]" value="<?php echo htmlspecialchars($options['mapasculturais_date_from']) ?>"  style="width: 80%"/>
+                </p>
+                <p>
+                  <label for="mapasculturais_date_to"><strong>Data limite para mostrar eventos</strong></label><br/>
+                  <input type="text" id="mapasculturais_date_to" class="text" name="theme_options[mapasculturais_date_to]" value="<?php echo htmlspecialchars($options['mapasculturais_date_to']) ?>"  style="width: 80%"/>
+                </p>
+
+                <p>
+                  <label for="mapasculturais_time_from"><strong>Horário de início p/ mostrar eventos</strong></label><br/>
+                  <input type="text" id="mapasculturais_time_from" class="text" name="theme_options[mapasculturais_time_from]" value="<?php echo htmlspecialchars($options['mapasculturais_time_from']) ?>"  style="width: 80%"/>
+                </p>
+                <p>
+                  <label for="mapasculturais_time_to"><strong>Horário limite p/ mostrar eventos</strong></label><br/>
+                  <input type="text" id="mapasculturais_time_to" class="text" name="theme_options[mapasculturais_time_to]" value="<?php echo htmlspecialchars($options['mapasculturais_time_to']) ?>"  style="width: 80%"/>
+                </p>
+                <p>
+                  <label for="main_color"><strong>Cor principal</strong></label><br/>
+                  <input type="text" id="main_color" class="text" name="theme_options[main_color]" value="<?php echo htmlspecialchars($options['main_color']) ?>"  style="width: 80%"/>
+                </p>
+
                 <h3>PDF da Programação</h3>
                 <p>Coloque o link (com http) para o arquivo PDF da Programação que estará disponível para download a partir da página da Programação</p>
                 <p>Para fazer upload de um arquivo, visite a seção <a href="<?php echo admin_url('media-new.php'); ?>">Mídia</a> aqui no admin.</p>
-                <div>
 
+                <div>
                     <label for="pdf-programacao"><strong>Link para PDF da programação</strong></label><br/>
                     <input type="text" id="pdf-programacao" class="text" name="theme_options[pdf-programacao]" value="<?php echo htmlspecialchars($options['pdf-programacao']); ?>" style="width: 80%"/>
-
-
                 </div>
 
                 <h3>Redes Sociais</h3>

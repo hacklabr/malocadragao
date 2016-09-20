@@ -71,24 +71,25 @@ function viradacultural_addJS() {
             'spaces' => md5_file(realpath(__DIR__.'/app/spaces.json')),
             'spaces-order' => md5_file(realpath(__DIR__.'/app/spaces-order.json')),
         ),
-        'startDate' => '2016-04-28',
-        'startTime' => '17:00',
-        'startDateTime' => '2016-04-28 17:00',
-        
-        'endDate' => '2016-05-01',
-        'endTime' => '23:59',
-        'endDateTime' => '2016-05-01 23:59',
-        
+        'startDate' => get_theme_option('mapasculturais_date_from'),
+        'startTime' => get_theme_option('mapasculturais_time_from'),
+        'startDateTime' => get_theme_option('mapasculturais_date_from') . ' ' . get_theme_option('mapasculturais_time_from'),
+        // '2016-04-28 17:00',
+
+        'endDate' => get_theme_option('mapasculturais_date_to'),
+        'endTime' => get_theme_option('mapasculturais_time_to'),
+        'endDateTime' => get_theme_option('mapasculturais_date_to') . ' ' . get_theme_option('mapasculturais_time_to'),
+
         'countdown' => [
-            'fgcolor' => '#E618B1'
+            'fgcolor' => get_theme_option('main_color'), // '#E618B1'
         ],
-        
+
         'subProjetos' => [
             '34' => 'Feira Literária',
             '37' => 'Programação Infantil',
             '38' => '3ª Semana do Cinema Brasileiro',
         ],
-        
+
         'minhaViradaApiUrl' => MINHA_VIRADA_API_URL,
         'minhaViradaFacebookApp' => [
             'id' => FACEBOOK_APP_ID,
@@ -403,6 +404,3 @@ function virada_meta_tags() {
     }
 
 }
-
-
-
