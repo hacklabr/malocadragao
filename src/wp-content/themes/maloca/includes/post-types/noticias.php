@@ -1,6 +1,6 @@
 <?php
 
-// Dê um Find Replace (CASE SENSITIVE!) em Noticias pelo nome do seu post type 
+// Dê um Find Replace (CASE SENSITIVE!) em Noticias pelo nome do seu post type
 
 class Noticias {
 
@@ -18,7 +18,7 @@ class Noticias {
     );
 
     /**
-     * alug do post type: deve conter somente minúscula 
+     * alug do post type: deve conter somente minúscula
      * @var string
      */
     protected static $post_type;
@@ -34,11 +34,11 @@ class Noticias {
         //add_filter('menu_order', array(self::$post_type, 'change_menu_label'));
         //add_filter('custom_menu_order', array(self::$post_type, 'custom_menu_order'));
         //add_action('save_post',array(__CLASS__, 'on_save'));
-        
+
         add_action('pre_get_posts', array(self::$post_type, 'add_to_main_query'));
-       
-        
-        
+
+
+
     }
 
     static function register() {
@@ -125,24 +125,24 @@ class Noticias {
     static function on_save($post_id) {
         if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
             return $post_id;
-        
+
         global $post;
-        
+
         if ($post->post_type == self::$post_type) {
-            // faça algo com o post 
+            // faça algo com o post
         }
     }
-    
-    function add_to_main_query($wp_query) {
+
+    static function add_to_main_query($wp_query) {
 
         if (!$wp_query->is_main_query())
             return $wp_query;
-        
-        if (is_front_page()) 
+
+        if (is_front_page())
             $wp_query->query_vars['post_type'] = array('post', 'noticias', 'imprensa');
-        
-     
+
+
     }
-    
+
 }
 Noticias::init();

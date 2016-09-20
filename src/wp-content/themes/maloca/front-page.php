@@ -17,7 +17,7 @@
                     <?php while ($homefeatures->have_posts()) : $homefeatures->the_post(); ?>
                         <div class="item" style="overflow:hidden;">
                             <?php 
-                                $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($_post->ID));
+                                $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
                                 $url = $thumb[0];
                             ?>
                             <div class="background" style="background-image:url('<?php echo $url; ?>');">

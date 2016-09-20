@@ -168,7 +168,7 @@ function viradacultural_custom_menus() {
 if(function_exists('register_sidebar')) {
     // sidebar
     register_sidebar( array(
-        'name' =>  'Sidebar',
+        'id' =>  'Sidebar',
         'description' => __('Sidebar', 'viradacultural'),
         'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="widget-content clearfix">',
         'after_widget' => '</div></div>',
@@ -214,9 +214,6 @@ if (!function_exists('viradacultural_comment')):
     }
 
 endif;
-
-
-
 
 // custom admin login logo
 function custom_login_logo() {
