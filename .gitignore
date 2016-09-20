@@ -16,3 +16,7 @@ src/wp-content/advanced-cache.php
 src/wp-content/object-cache.php
 src/wp-content/uploads
 src/wp-content/w3tc-config/
+
+src/wp-content/themes/maloca/app/events.json
+src/wp-content/themes/maloca/app/spaces-order.json
+src/wp-content/themes/maloca/app/spaces.json
