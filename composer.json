@@ -1,0 +1,7 @@
+{
+    "name": "Mutirao/Maloca",
+    "type": "wordpress-theme",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
