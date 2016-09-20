@@ -90,12 +90,12 @@ function viradacultural_addJS() {
             '38' => '3ª Semana do Cinema Brasileiro',
         ],
 
-        'minhaViradaApiUrl' => MINHA_VIRADA_API_URL,
+        'minhaViradaApiUrl' => get_theme_option('mapasculturais_api_url'),
         'minhaViradaFacebookApp' => [
-            'id' => FACEBOOK_APP_ID,
-            'secret' => FACEBOOK_APP_SECRET
+            'id' => get_theme_option('mapasculturais_fb_app_id'),
+            'secret' => get_theme_option('mapasculturais_fb_app_secret')
         ],
-        'programacaoDefaultViewBy' => PROGRAMACAO_DEFAULT_VIEWBY
+        'programacaoDefaultViewBy' => get_theme_option('mapasculturais_programacao_default_viewby')
     ));
 
 

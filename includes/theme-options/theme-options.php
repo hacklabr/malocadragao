@@ -13,6 +13,9 @@ function get_theme_default_options() {
         'mapasculturais_date_to' => '2016-05-01',
         'mapasculturais_time_from' => '17:00',
         'mapasculturais_time_to' => '23:59',
+        'mapasculturais_fb_app_id' => '',
+        'mapasculturais_fb_app_secret' => '',
+        'mapasculturais_programacao_default_viewby' => 'time',
 
         'main_color' => '#E618B1',
         'transparencia_url' => '',
@@ -130,6 +133,21 @@ function theme_options_page_callback_function() {
                 <p>
                   <label for="main_color"><strong>Cor principal</strong></label><br/>
                   <input type="text" id="main_color" class="text" name="theme_options[main_color]" value="<?php echo htmlspecialchars($options['main_color']) ?>"  style="width: 80%"/>
+                </p>
+
+                <p>
+                  <label for="mapasculturais_fb_app_id"><strong>Facebook App ID</strong></label><br/>
+                  <input type="text" id="mapasculturais_fb_app_id" class="text" name="theme_options[mapasculturais_fb_app_id]" value="<?php echo htmlspecialchars($options['mapasculturais_fb_app_id']) ?>"  style="width: 80%"/>
+                </p>
+
+                <p>
+                  <label for="mapasculturais_fb_app_secret"><strong>Facebook App Secret</strong></label><br/>
+                  <input type="text" id="mapasculturais_fb_app_secret" class="text" name="theme_options[mapasculturais_fb_app_secret]" value="<?php echo htmlspecialchars($options['mapasculturais_fb_app_secret']) ?>"  style="width: 80%"/>
+                </p>
+
+                <p>
+                  <label for="mapasculturais_programacao_default_viewby"><strong>Padrão de ordenação (space, name or time)</strong></label><br/>
+                  <input type="text" id="mapasculturais_programacao_default_viewby" class="text" name="theme_options[mapasculturais_programacao_default_viewby]" value="<?php echo htmlspecialchars($options['mapasculturais_programacao_default_viewby']) ?>"  style="width: 80%"/>
                 </p>
 
                 <h3>PDF da Programação</h3>
