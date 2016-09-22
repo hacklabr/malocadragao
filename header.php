@@ -138,24 +138,16 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                     $blog_link = function_exists('get_the_posts_home_url') ? get_the_posts_home_url() : get_category_link( $blog_id );
                 ?>
                 <ul id="main-menu" class="nav">
-                    <li><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-maloca" title="A Maloca"><span>A Maloca</span></a></li>
+                    <li><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/cidade-das-artes/" title="Cidade das Artes"><span>Cidade das Artes</span></a></li>
                     <?php if (mostrar_programacao()): ?>
-                        <li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Atrações"><span>Atrações</span></a></li>
+                        <li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li>
                     <?php endif; ?>
-                    <li><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/como-chegar/" title="Como Chegar"><span>Como Chegar</span></a></li>
+                    <li><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/mapa/" title="Mapa"><span>Mapa</span></a></li>
                     <li><a class="noticias" href="<?php echo get_post_type_archive_link( 'noticias' ); ?>" title="Notícias"><span>Notícias</span></a></li>
-                    <li><a class="gallery" href="" title="<?php bloginfo( 'url' ); ?>/galeria-de-fotos/"><span>Galeria de Fotos</span></a></li>
-                    <?php /*
-                    <li><a class="blog" href="<?php echo esc_url( $blog_link ); ?>" title="Blog"><span>Blog</span></a></li>
-                    */?>
+                    <li><a class="gallery" href="<?php bloginfo( 'url' ); ?>/chamada-publica/" title="Chamada Pública"><span>Chamada Pública</span></a></li>
                     <?php if (mostrar_programacao()): ?>
-                        <li><a class="nas-redes" href="<?php bloginfo( 'url' ); ?>/nas-redes/" title="Nas redes"><span>Nas redes</span></a></li>
-
-                        <li><a class="minha-virada" href="<?php bloginfo( 'url' ); ?>/minha-maloca/" title="Minha Maloca"><span>Minha Maloca</span></a></li>
-
                     <?php endif; ?>
                     <?php if( false ): ?>
-                        <li><a class="mapa" href="<?php bloginfo( 'url' ); ?>/mapa/" title="Mapa de Serviços"><i class="icon icon_map"></i><span>Mapa de Serviços</span></a></li>
                     <?php endif; ?>
                     <li class="whitespace"><span></span></li>
                 </ul>
