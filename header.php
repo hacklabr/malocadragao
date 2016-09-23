@@ -28,9 +28,7 @@
         <title><?php
             /* Print the <title> tag based on what is being viewed. */
             global $page, $paged;
-
             wp_title( '|', true, 'right' );
-
         ?></title>
 
         <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -75,7 +73,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                     version    : 'v2.0'
                   });
                 };
-
                 (function(d, s, id){
                    var js, fjs = d.getElementsByTagName(s)[0];
                    if (d.getElementById(id)) {return;}
@@ -175,7 +172,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         </button>
                         <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
                             <span class="sr-only"><?php bloginfo( 'name' ); ?></span>
-                            <?php html::image('logo-mobile.png', 'Maloca Dragão', ['style'=>'margin:0 auto; height:1.2em']); ?>
+                            <?php html::image('logo-mobile.png', 'Cidade das Artes', ['style'=>'margin:0 auto; height:1.2em']); ?>
                         </a>
                         <?php if($paginaprogramacao == 'programacao'): ?>
                             <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#programacao-navbar">
@@ -187,20 +184,21 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 </div>
                 <div class="collapse navbar-collapse" id="collapsed-navigation">
                     <ul class="nav navbar-nav">
-                        <li class="col-sm-6 col-xs-6"><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-maloca" title="A Maloca"><span>A Maloca</span></a></li>
+                        <li class="col-sm-6 col-xs-6"><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/cidade-das-artes" title="Cidade das Artes"><span>Cidade das Artes</span></a></li>
                         <?php if (mostrar_programacao()): ?>
-                            <li class="col-sm-6 col-xs-6"><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Atrações"><span>Atrações</span></a></li>
+                            <li class="col-sm-6 col-xs-6"><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li>
                         <?php endif; ?>
-                        <li class="col-sm-6 col-xs-6"><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/como-chegar/" title="Como chegar"><span>Como Chegar</span></a></li>
+                        <li class="col-sm-6 col-xs-6"><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/mapa/" title="Como chegar"><span>Mapa</span></a></li>
                         <li class="col-sm-6 col-xs-6"><a class="noticias" href="<?php echo get_post_type_archive_link( 'noticias' ); ?>" title="Notícias"><span>Notícias</span></a></li>
-                        <li class="col-sm-6 col-xs-6"><a class="gallery" href="<?php bloginfo( 'url' ); ?>/galeria-de-fotos/" title="Galeria de Fotos"><span>Galeria de Fotos</span></a></li>
-                        <!-- <li class="col-sm-6 col-xs-6"><a class="blog" href="<?php echo esc_url( $blog_link ); ?>" title="Blog"><span>Blog</span></a></li> -->
+                        <li class="col-sm-6 col-xs-6"><a class="gallery" href="<?php bloginfo( 'url' ); ?>/chamada-publica/" title="Chamada Pública"><span>Chamada Pública</span></a></li>
                         
+                        <!-- <li class="col-sm-6 col-xs-6"><a class="blog" href="<?php echo esc_url( $blog_link ); ?>" title="Blog"><span>Blog</span></a></li>
                         <?php if(false): ?>
                         <li class="col-sm-6 col-xs-6"><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/Imprensa" title="Imprensa"><span>Imprensa</span></a></li>
                         <li class="col-sm-6 col-xs-6"><a class="anos-10" href="<?php bloginfo( 'url' ); ?>/historico/" title="Histórico"><span>Histórico</span></a></li>
                         <?php endif; ?>
                         
+
                         <?php if (mostrar_programacao()): ?>
                             <li class="col-sm-6 col-xs-6"><a class="nas-redes" href="<?php bloginfo( 'url' ); ?>/nas-redes/" title="Nas redes"><span>Nas redes</span></a></li>
 
@@ -211,7 +209,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <?php if(false): ?>
                             <li class="col-sm-6 col-xs-6"><a class="mapa" href="<?php bloginfo( 'url' ); ?>/mapa/" title="Mapa de Serviços"><i class="icon icon_map" style="font-size:15px; margin-left: -28px; margin-right: 13px;"></i><span>Mapa de Serviços</span></a></li>
                         <?php endif; ?>
-
+						-->
+						
                     </ul>
                 </div>
             </nav>
