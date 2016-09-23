@@ -4115,10 +4115,10 @@ th.visible-print,td.visible-print {
     color: #e7e8e9;
     background-color: #f15929}
 #main-header-minified .a-virada {
-    background-image: url("img/virada-icon-active.svg");
+    background-image: url("img/icon-cidades-active.png");
     background-size: 22px 22px}
 #main-header-minified .a-virada:hover {
-    background-image: url("img/virada-icon.svg")}
+    background-image: url("img/icon-cidades.png")}
 #main-header-minified .programacao {
     background-image: url("img/programacao-icon-active.svg");
     background-size: 22px 22px}
@@ -4130,20 +4130,20 @@ th.visible-print,td.visible-print {
 #main-header-minified .noticias:hover {
     background-image: url("img/noticias-icon.svg")}
 #main-header-minified .gallery {
-    background-image: url("img/gallery-icon-active.svg");
+    background-image: url("img/icon-chamada-active.png");
     background-size: 22px 22px}
 #main-header-minified .gallery:hover {
-    background-image: url("img/gallery-icon.svg")}
+    background-image: url("img/icon-chamada.png")}
 #main-header-minified .blog {
     background-image: url("img/blog-icon-active.svg");
     background-size: 22px 22px}
 #main-header-minified .blog:hover {
     background-image: url("img/blog-icon.svg")}
 #main-header-minified .imprensa {
-    background-image: url("img/imprensa-icon-active.svg");
+    background-image: url("img/icon-mapa-active.svg");
     background-size: 22px 22px}
 #main-header-minified .imprensa:hover {
-    background-image: url("img/imprensa-icon.svg")}
+    background-image: url("img/icon-mapa")}
 #main-header-minified .nas-redes {
     background-image: url("img/nas-redes-icon-active.svg");
     background-size: 22px 22px}
