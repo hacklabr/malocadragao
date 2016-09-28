@@ -29,10 +29,11 @@
             </li>
         </ul>
         <?php endif; ?>
-        <!--<p class="text-center">
-            <?php html::image("logos-990.png", "", array("class" => "img-responsive visible-sm visible-md visible-lg")); ?>
-            <?php html::image("logos-320.png", "", array("class" => "img-responsive visible-xs")); ?>
-        </p>-->
+        <p class="text-center">
+            <?php html::image("logos-570.png", "", array("class" => "img-responsive visible-sm visible-md visible-lg")); ?>
+            <?php html::image("logos-270.png", "", array("class" => "img-responsive visible-xs")); ?>
+        </p>
+
         <p class="text-center">Desenvolvido por <a id="hacklab" href="http://www.hacklab.com.br" title="hacklab/" target="_blank"><?php html::image("hacklab.png", "Hacklab", array("class" => "hacklab")); ?></a> em parceira com <a id="mutirao" href="http://institutomutirao.org/" title="Mutirão" target="_blank"><?php html::image("mutirao.png", "Multirão", array("class" => "mutirao")); ?></a></p>
     </footer>
     <!-- #main-footer -->
