@@ -2608,6 +2608,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
     float: right}
 .pager .previous>a,.pager .previous>span {
 
+
     float: left}
 .pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span {
     color: #dedede;
@@ -4015,10 +4016,10 @@ th.visible-print,td.visible-print {
 #main-menu .imprensa:hover {
     background-image: url("img/icon-mapa-active.png")}
 #main-menu .nas-redes {
-    background-image: url("img/nas-redes-icon.svg");
+    background-image: url("img/icon-formacao");
     background-size: 20px 20px}
 #main-menu .nas-redes:hover {
-    background-image: url("img/nas-redes-icon-active.svg")}
+    background-image: url("img/icon-formacao-active.png")}
 #main-menu .anos-10 {
     background-image: url("img/10-anos-icon.svg");
     background-size: 20px 20px}
@@ -4110,6 +4111,7 @@ th.visible-print,td.visible-print {
     z-index: 30;
     font-family: "Oswald","Droid Sans","Open Sans",Helvetica,Arial,sans-serif;
     font-size: 14px;
+
     text-transform: uppercase}
 #main-header-minified ul.nav.navbar-nav a:hover {
     color: #e7e8e9;
@@ -4140,15 +4142,15 @@ th.visible-print,td.visible-print {
 #main-header-minified .blog:hover {
     background-image: url("img/blog-icon.svg")}
 #main-header-minified .imprensa {
-    background-image: url("img/icon-mapa-active.svg");
+    background-image: url("img/icon-mapa-active.png");
     background-size: 22px 22px}
 #main-header-minified .imprensa:hover {
     background-image: url("img/icon-mapa")}
 #main-header-minified .nas-redes {
-    background-image: url("img/nas-redes-icon-active.svg");
+    background-image: url("img/icon-formacao-active.png");
     background-size: 22px 22px}
 #main-header-minified .nas-redes:hover {
-    background-image: url("img/nas-redes-icon.svg")}
+    background-image: url("img/icon-formacao.png")}
 #main-header-minified .anos-10 {
     background-image: url("img/10-anos-icon-active.svg");
     background-size: 22px 22px}
