@@ -3880,7 +3880,7 @@ th.visible-print,td.visible-print {
     background-image: url(img/logo.png)}
 #main-header {
     left: 0;
-    width: 225px;
+    width: 250px;
     position: fixed;
     z-index: 1040;
     top: 0;
@@ -3976,9 +3976,8 @@ th.visible-print,td.visible-print {
     overflow: hidden;
     position: relative;
     height: 3000px;
-    background-color: #e7e8e9;
-    background-image: url("img/bg-bottom.png");
-    background-size: 100% 100%}
+    background-color: #ffffdc;
+    background-image: url("img/bg-bottom.png")}
 #main-menu li.whitespace span {
     display: block;
     height: 3000px;
