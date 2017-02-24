@@ -47,14 +47,14 @@ if($event_ids){
 
     $event_ids = implode(',', $event_ids);
 
-    $occurrences_json = file_get_contents(API_URL . "eventOccurrence/find?@select=id,space.id,eventId,rule&event=IN($event_ids)&@order=_startsAt");
+    $occurrences_json = file_get_contents(API_URL . "eventOccurrence/find?@select=id,space.{id,name},eventId,rule&event=IN($event_ids)&@order=_startsAt");
 
     $occurrences = json_decode($occurrences_json);
 
 
     $count = 0;
     foreach ($occurrences as $occ) {
-        $rule = $occ->rule;
+        $rule = json_decode($occ->rule);
         $e = clone $events_by_id[$occ->eventId];
         $e->id = $occ->id;
         $e->eventId =  $occ->eventId;
